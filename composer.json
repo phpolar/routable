@@ -4,8 +4,6 @@
   "description": "Supports route handling interoperability.",
   "type": "library",
   "require-dev": {
-    "ext-ast": "*",
-    "ext-openssl": "*",
     "squizlabs/php_codesniffer": "^3.7"
   },
   "autoload": {
@@ -17,16 +15,10 @@
     "sort-packages": true
   },
   "require": {
-    "php": ">=8.1",
-    "psr/container": "^2.0"
+    "php": ">=8.1"
   },
   "license": "MIT",
   "scripts": {
-    "check": [
-      "@lint -q",
-      "@semgrep",
-      "@smell"
-    ],
     "ci:lint": "composer exec \"@lint\"",
     "ci:lint-fix": "composer exec \"@lint-fix\"",
     "lint": "phpcs",

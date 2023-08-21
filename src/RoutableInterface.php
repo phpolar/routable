@@ -4,8 +4,6 @@ declare(strict_types=1);
 
 namespace Phpolar\Routable;
 
-use Psr\Container\ContainerInterface;
-
 /**
  * Defines what should be done when a request is received.
  *
@@ -35,7 +33,7 @@ interface RoutableInterface
      * class PathWithIdDelegate implements RoutableInterface
      * {
      *     // Define route parameters as optional arguments in the child class.
-     *     public function process(ContainerInterface $container, string $id = ""): string
+     *     public function process(string $id = ""): string
      *     {
      *         // ...
      *     }
@@ -47,7 +45,7 @@ interface RoutableInterface
      * class PathWithNameDelegate implements RoutableInterface
      * {
      *     // Define route parameters as optional arguments in the child class.
-     *     public function process(ContainerInterface $container, string $name = ""): string
+     *     public function process(string $name = ""): string
      *     {
      *         // ...
      *     }
@@ -55,5 +53,5 @@ interface RoutableInterface
      *
      * ```
      */
-    public function process(ContainerInterface $container): string;
+    public function process(): string;
 }
