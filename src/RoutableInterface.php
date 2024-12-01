@@ -51,6 +51,17 @@ interface RoutableInterface
      *     }
      * }
      *
+     * $route = `/some/path/{name}/another/{id}`;
+     *
+     * class PathWithNameAndIdDelegate implements RoutableInterface
+     * {
+     *     // Define route parameters as optional arguments in the child class.
+     *     public function process(string $name = "", string $id = ""): string
+     *     {
+     *         // ...
+     *     }
+     * }
+     *
      * ```
      */
     public function process(): string;
