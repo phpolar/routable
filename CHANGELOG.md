@@ -1,3 +1,9 @@
+## 2.0.1 (2024-12-01)
+
+### Fix
+
+- **composer**: upgrade dependencies
+
 ## 2.0.0 (2023-08-20)
 
 ### BREAKING CHANGE
