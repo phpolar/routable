@@ -1,3 +1,13 @@
+## 3.0.0 (2025-06-04)
+
+### BREAKING CHANGE
+
+- The types of values returned by the process method now include all valid JSON types. See https://www.json.org/json-en.html.
+
+### Feat
+
+- **RoutableInterface**: widen the return type of the process method
+
 ## 2.0.1 (2024-12-01)
 
 ### Fix
